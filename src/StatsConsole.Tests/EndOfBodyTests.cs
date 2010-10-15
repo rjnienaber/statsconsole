@@ -168,7 +168,7 @@ namespace StatsConsole.Tests
         [Test]
         public void Should_Write_Any_Data_Directly_To_The_Stream()
         {
-            var originalText = "abcdefghi";
+            var originalText = "abcdefghi؎";
             var bytes = Encoding.UTF8.GetBytes(originalText);
 
             var eofDetected = false;

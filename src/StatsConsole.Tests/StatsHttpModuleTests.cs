@@ -34,7 +34,7 @@ namespace StatsConsole.Tests
 
         public override void Teardown()
         {
-            StatsConsole.Context.SetHttpContext(null);
+            Context.SetHttpContext(null);
         }
 
         [Test]

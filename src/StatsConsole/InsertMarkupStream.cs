@@ -130,7 +130,7 @@ namespace StatsConsole
                 if (_detectingTag) _bufferedCharacters.Add(characters[index]);
             }
 
-            endIndex = !_detectingTag ? count : endIndex;
+            endIndex = !_detectingTag ? characters.Length : endIndex;
             _streamWriter.Write(characters, startIndex, endIndex - startIndex);
             _streamWriter.Flush();
         }
